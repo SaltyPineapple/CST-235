@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<body>
+		<h1>Please fill out the form</h1>
+		<p>Some text here</p>
+		
+		<h:form>
+			What is a beautiful thing:
+			<h:inputText value="#{thing.title}"/>
+			
+			Describe it:
+			<h:inputText value="#{thing.desc}"/>
+			
+			Rate it:
+			<h:inputText value="#{thing.value}"/>
+			
+			<h:commandButton action="#{formController.onSubmitEdit()}" value="Submit"/>
+		
+		
+		</h:form>
+		
+		
+	</body>
+</html>
